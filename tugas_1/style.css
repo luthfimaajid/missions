@@ -14,65 +14,91 @@ body {
 
 }
 
+.wrapper * {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 .merah {
     grid-column: 1/1;
-    grid-row: 1/4;
-    background-color: red;
-    color: yellow;
+    grid-row: 1/4;  
     
 }
 
 .hijau {
     grid-column: 2/4;
     grid-row: 1;
-    background-color: green;
 }
 
 .ungu {
     grid-column: 4/span 5;
     grid-row: 1;
-    background-color: purple;
+    
 }
 
 .jingga {
     grid-column: 1;
     grid-row: 4/7;
-    background-color: orange;
 }
 
 .pink {
     grid-column: 2;
     grid-row: 2/5;
-    background-color: pink;
+    
 }
 
 .hijau-muda {
     grid-column: 3/ span 5;
     grid-row: 2;
-    background-color: orange;
+    
 }
 
 .biru {
     grid-column: 3;
     grid-row: 3/5;
-    background-color: green;
+    
 }
 
 .biru-tua {
     grid-column: 4/span 5;
     grid-row: 3/7;
-    background-color: blue;
-    color: yellow;
+    
 }
 
 .kuning {
     grid-column: 2/span 2;
     grid-row: 5/7;
+}
+
+.bg-yellow {
     background-color: yellow;
 }
 
-.flex-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+.bg-red {
+    background-color: red;  
+}
+
+.txt-yellow {
+    color: yellow;
 }
