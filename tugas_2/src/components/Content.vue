@@ -4,7 +4,7 @@
 </script>
 
 <template>
-	<article class="flex">
+	<article v-for="index in 10" class="flex px-2 mx-10 mb-3">
 		<div class="v-center">
 			<a>
 				<img
@@ -12,28 +12,24 @@
 			</a>
 		</div>
 		<div>
-			<h1>Lorem Ipsum Dolor Sit Amet</h1>
-			<p>Phasellus lacinia libero in massa accumsan tincidunt. Curabitur ut tristique lectus. Duis mauris sem,
+			<h1 class="font-serif text-l lh-3 mb-1 text-orange font-bold">Lorem Ipsum Dolor Sit Amet</h1>
+			<p class="mb-1 text-med-gray">Phasellus lacinia libero in massa accumsan tincidunt. Curabitur ut tristique
+				lectus. Duis mauris sem,
 				sollicitudin vitae ante vel, malesuada laoreet quam. Praesent non odio et nibh dictum luctus. Nunc
 				vulputate,</p>
-			<div class="flex justify-between">
-					<button>Read lesson</button>
-					<div class="v-center">
-						<p>John Doe</p>
-						<img class="profile-img" src="https://hackdesign.imgix.net/user/avatar/283312/0df57e1e-2859-4787-87e5-cf98e9d305b1.jpeg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=662487320d49b1f3f060f006bb8348bc"/>
-					</div>
+			<div class="flex justify-between v-center">
+				<button class="h-2 bg-white text-black">Lorem Ipsum</button>
+				<div class="v-center">
+					<p class="px-1 text-gray">John Doe</p>
+					<img class="profile-img"
+						src="https://hackdesign.imgix.net/user/avatar/283312/0df57e1e-2859-4787-87e5-cf98e9d305b1.jpeg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=662487320d49b1f3f060f006bb8348bc" />
+				</div>
 			</div>
-
 		</div>
 	</article>
 </template>
 
 <style scoped>
-article {
-	margin: 0 8rem 2rem;
-	padding: 1rem 2rem;
-}
-
 a {
 	padding-right: 2rem;
 }

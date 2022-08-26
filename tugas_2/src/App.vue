@@ -4,12 +4,16 @@
 import Nav from "./components/Nav.vue";
 import Banner from "./components/Banner.vue";
 import Content from "./components/Content.vue";
+import Newsletter from "./components/Newsletter.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
   <Nav />
   <Banner />
   <Content />
+  <Newsletter />
+  <Footer />
 </template>
 
 <style scoped>

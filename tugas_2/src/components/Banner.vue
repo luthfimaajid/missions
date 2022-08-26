@@ -4,15 +4,16 @@
 </script>
 
 <template>
-	<section>
-		<h2>Looking to get started in design?</h2>
-		<p>Our first 50 lessons have been bundled together and are available for free.</p>
-		<button>Read 101 lessons</button>
+	<section class="mb-2 mx-10">
+		<div class="bg-gray py-2 px-2 text-m">
+		<h2 class="lh-1 mb-1 text-dark-blue">Lorem ipsum dolor sit amet</h2>
+		<p class="lh-1 mb-1 text-gray">Our first 50 lessons have been bundled together and are available for free.</p>
+		<button class="h-2 bg-white text-black">Lorem ipsum</button>
+		</div>
 	</section>
 </template>
 <style scoped>
 section{
-	margin: 0 8rem 2rem;
 	padding: 1rem 2rem;
 }
 </style>
