@@ -3,6 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { faker } from "@faker-js/faker"
 
+
 interface contentData {
 	imgUrl: string
 	title: string
@@ -12,7 +13,7 @@ interface contentData {
 
 const data: contentData[] = [];
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 105; i++) {
 	// const imgUrl = faker.image.cats(1000, 1000, true);
 	const imgUrl = "https://hackdesign.imgix.net/lessons/week11.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=png&fit=max&auto=format&s=c71c4f2c6069a300f19d34cbc7651b45";
 	const title = faker.lorem.sentence(5).replace(".", "");
@@ -30,10 +31,10 @@ for (let i = 0; i < 10; i++) {
 </script>
 
 <template>
-	<article v-for="item in data" class="container flex py-2 px-2 l:my-10 xl:my-auto">
+	<lazy-component v-for="item in data" class="container flex py-2 px-2 l:my-10 xl:my-auto">
 		<div class="content-img v-center">
 			<a>
-				<img :src="item.imgUrl" />
+				<img v-lazy="item.imgUrl" />
 			</a>
 		</div>
 		<div>
@@ -50,7 +51,7 @@ for (let i = 0; i < 10; i++) {
 				</div>
 			</div>
 		</div>
-	</article>
+	</lazy-component>
 </template>
 
 <style scoped>
