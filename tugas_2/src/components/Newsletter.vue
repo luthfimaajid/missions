@@ -8,10 +8,10 @@
 		<div class="bg-gray p-2 l:mx-15">
 			<h2 class="lh-1 mb-1 text-dark-blue">Lorem ipsum dolor sit amet</h2>
 			<p class="mb-1 text-gray">Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-			<div class="flex flex-col l:flex-row">
+			<form class="flex flex-col l:flex-row">
 				<input placeholder="Email address" type="email" class="h-3 bg-white">
-				<button class="bg-green">Get started</button>
-			</div>
+				<button class="bg-green" type="submit">Get started</button>
+			</form>
 		</div>
 	</section>
 </template>
@@ -28,4 +28,5 @@ button {
 	flex-basis: 30%;
 	min-height: 38px;
 }
+
 </style>

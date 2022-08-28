@@ -30,6 +30,7 @@
 <style scoped>
 nav {
   padding: 8px 16px;
+  font-size: larger;
 }
 .logo {
   width: 200px;
