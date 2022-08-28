@@ -4,11 +4,11 @@
 </script>
 
 <template>
-	<section class="mx-15 my-5">
-		<div class="container bg-gray p-2">
+	<section class="container py-4">
+		<div class="bg-gray p-2 l:mx-15">
 			<h2 class="lh-1 mb-1 text-dark-blue">Lorem ipsum dolor sit amet</h2>
 			<p class="mb-1 text-gray">Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-			<div class="flex">
+			<div class="flex flex-col l:flex-row">
 				<input placeholder="Email address" type="email" class="h-3 bg-white">
 				<button class="bg-green">Get started</button>
 			</div>
@@ -19,18 +19,13 @@
 
 <style scoped>
 
-@media only screen  and (min-width: 1000px) {
-	.container {
-		width: 600px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
 input {
 	flex-basis: 70%;
+	min-height: 50px;
 }
 
 button {
 	flex-basis: 30%;
+	min-height: 38px;
 }
 </style>

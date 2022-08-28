@@ -4,15 +4,15 @@
 </script>
 
 <template>
-  <header>
-    <nav class="flex justify-between m-0 px-8">
-      <div class="v-center">
-        <a href="#">
-          <img class="logo"
-            src="https://hackdesign.org/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" />
-        </a>
-      </div>
-      <ul class="flex text-gray">
+  <header class="l:flex l:justify-between container">
+    <div class="px-2">
+      <a href="#">
+        <img class="logo"
+          src="https://hackdesign.org/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" />
+      </a>
+    </div>
+    <nav class="by-1 b-gray md:b-0 l:flex-center">
+      <ul class="text-gray flex-center">
         <li>
           <a href="#">Lorem</a>
         </li>
@@ -24,22 +24,16 @@
         </li>
       </ul>
     </nav>
-
-
   </header>
-
 </template>
 
 <style scoped>
-li {
-  padding-left: 3rem;
-  display: flex;
-  align-items: center;
+nav {
+  padding: 8px 16px;
 }
-
 .logo {
   width: 200px;
-  min-height: 70px;
+  min-height: 40px;
   padding: 1rem 0;
 }
 </style>
