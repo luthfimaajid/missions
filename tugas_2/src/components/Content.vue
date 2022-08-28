@@ -3,6 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { faker } from "@faker-js/faker"
 
+
 interface contentData {
 	imgUrl: string
 	title: string
@@ -12,7 +13,7 @@ interface contentData {
 
 const data: contentData[] = [];
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 20; i++) {
 	// const imgUrl = faker.image.cats(1000, 1000, true);
 	const imgUrl = "https://hackdesign.imgix.net/lessons/week11.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=png&fit=max&auto=format&s=c71c4f2c6069a300f19d34cbc7651b45";
 	const title = faker.lorem.sentence(5).replace(".", "");
@@ -30,19 +31,21 @@ for (let i = 0; i < 10; i++) {
 </script>
 
 <template>
-	<article v-for="item in data" class="container flex py-2 px-2 l:my-10 xl:my-auto">
+	<lazy-component v-for="item in data" class="container flex py-2 px-2 l:my-10 xl:my-auto">
 		<div class="content-img v-center">
 			<a>
-				<img :src="item.imgUrl" />
+				<img v-lazy="item.imgUrl" />
 			</a>
 		</div>
 		<div>
-			<h1 class="font-serif text-l lh-3 mb-1 text-orange font-bold capitalize">{{ item.title }}</h1>
-			<p class="mb-1 text-med-gray">
+			<a>
+				<h1 class="font-serif text-l lh-3 mb-1 text-orange font-semibold capitalize">{{ item.title }}</h1>
+			</a>
+			<p class="mb-1 text-med-gray lh-2">
 				{{ item.description }}
 			</p>
 			<div class="flex flex-col l:flex-row l:justify-between l:flex-center">
-				<button class="h-2 bg-white text-black rounded mb-1 l:mb-0">Lorem Ipsum</button>
+				<button class="h-2 px-1 bg-white text-black rounded mb-1 l:mb-0">Lorem Ipsum</button>
 				<div class="flex flex-col l:flex-row l:flex-center">
 					<p class="text-gray l:pr-1">{{ item.author }}</p>
 					<img class="profile-img"
@@ -50,13 +53,17 @@ for (let i = 0; i < 10; i++) {
 				</div>
 			</div>
 		</div>
-	</article>
+	</lazy-component>
 </template>
 
 <style scoped>
 a {
 	display: inline-block;
 	padding-right: 2.5rem;
+}
+
+a:hover {
+	color: #DE3F1C;
 }
 
 img {
@@ -66,7 +73,7 @@ img {
 }
 
 button {
-	max-width: 120px;
+	max-width: 150px;
 	align-items: center;
 }
 

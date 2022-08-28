@@ -1,4 +1,22 @@
-# Vue 3 + TypeScript + Vite
+# Tugas 2
+
+Imitate a website [hackdesign](https://hackdesign.org/lessons) \
+
+[Deployed Site](https://tugas2webdev.netlify.app/)
+
+## Install
+Clone this repo \
+`cd "cloned folder name"/tugas_2` \
+`yarn` or `npm i`
+
+## Dev
+`yarn dev` or `npm run dev`
+
+## Build
+`yarn build` or `npm run build`
+
+
+## Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 

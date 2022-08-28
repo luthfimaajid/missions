@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Source+Serif+Pro:wght@200;300;400;600;700&display=swap');
+
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -60,7 +62,7 @@ a:hover {
 button {
   padding: 0 0.5rem;
   box-shadow: 0px 0px 2px #000;
-  font-weight: bold;
+  font-weight: 600;
   font-size: medium;
 }
 
@@ -100,7 +102,7 @@ input {
 }
 
 .font-serif {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Source Serif Pro', 'Times New Roman', Times, serif;
 }
 
 .flex {
@@ -139,6 +141,10 @@ input {
 
 .font-bold {
   font-weight: bold;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-black {
@@ -193,7 +199,8 @@ input {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-py-2 {
+
+.py-2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -335,7 +342,7 @@ py-2 {
     display: flex !important;
   }
 
-  .l\:mb-0{
+  .l\:mb-0 {
     margin-bottom: 0;
   }
 
