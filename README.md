@@ -1,8 +1,12 @@
 # Web Dev Course Monorepo
+A collection task of my web dev course
 
 ## Link To Deployed Task
+### Mission 1
 - [Task 1](https://tugas1webdev.netlify.app/)
 - [Task 2](https://tugas2webdev.netlify.app/)
+
+### Mission 2
 <!-- - [Task 3](https://tugas3webdev.netlify.app/) -->
 <!-- - [Task 4](https://tugas4webdev.netlify.app/) -->
 <!-- - [Task 5](https://tugas5webdev.netlify.app/) -->
