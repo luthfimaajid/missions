@@ -1,4 +1,4 @@
-# Web Dev Course Mono Repo
+# Web Dev Course Monorepo
 
 ## Link To Deployed Task
 - [Task 1](https://tugas1webdev.netlify.app/)
