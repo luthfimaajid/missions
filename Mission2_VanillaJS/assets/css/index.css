@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,11 +11,45 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  /* min-height: 100vh; */
+  /* max-height: 100vh; */
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.animation-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
