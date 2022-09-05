@@ -33,7 +33,7 @@ var canvas = document.getElementById('star'),
 	mouseX,
 	mouseY,
 	stars = [],
-	initStarsPopulation = 80,
+	initStarsPopulation = 50,
 	dots = [],
 	dotsMinDist = 2,
 	params = {
