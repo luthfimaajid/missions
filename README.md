@@ -3,11 +3,11 @@ A collection task of my web dev course
 
 ## Link To Deployed Task
 ### Mission 1
-- [Task 1](https://tugas1webdev.netlify.app/)
-- [Task 2](https://tugas2webdev.netlify.app/)
+- [Grid Layout](https://tugas1webdev.netlify.app/)
+- [Imitate Web](https://tugas2webdev.netlify.app/)
 
 ### Mission 2
-<!-- - [Task 3](https://tugas3webdev.netlify.app/) -->
+- [Animation With Vanilla JS](https://mission2webdev.netlify.app/)
 <!-- - [Task 4](https://tugas4webdev.netlify.app/) -->
 <!-- - [Task 5](https://tugas5webdev.netlify.app/) -->
 <!-- - [Task 6](https://tugas6webdev.netlify.app/) -->
